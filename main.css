@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'Audimat'; /*a name to be used later*/
+    src:url('font/audimat.otf'); /*URL to font*/
+}
+
+h1 {
+    margin-left: 40px;
+    margin-bottom: 20px;
+    display: block;
+    font-size: 5em;
+    font-family: 'Audimat';
+}
+
+#header {
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+#wrapper {
+    margin: 30px auto 0;
+    width: 1300px;
+    overflow: hidden;
+}
+
+#planets {
+    float:left;
+    left: 20px;
+    right: 200px;
+}
+
+#doc {
+    color:white;
+    background: rgba(0,0,0,0.3);
+    left: auto;
+    right: 150px;
+    padding: 10px;
+    margin:auto;
+    overflow: hidden;
+}
+
+#doc p {
+    font-family: 'Audimat';
+    font-size: 30px;
+    margin: 20px;
+}
+
+#github {
+    height:320px;
+    width:320px;
+    background: url(img/github.png);
+    
+}
+
+#github:hover {
+    background: url(img/github.gif);
+    
+}
