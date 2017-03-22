@@ -3,6 +3,16 @@
     src:url('font/audimat.otf'); /*URL to font*/
 }
 
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 120px;
+    margin-left:0px;
+}
+
 h1 {
     margin-left: 40px;
     margin-bottom: 20px;
@@ -25,21 +35,14 @@ a {
     -ms-user-select: none;
 }
 
-#wrapper {
+.wrapper {
     margin: 30px auto 0;
     min-width: 30em; 
     max-width: 1300px;
     overflow: hidden;
 }
 
-html {
-    position: relative;
-    min-height: 100%;
-}
-body {
-    margin-bottom: 120px;
-}
-#footer {
+.footer {
     font-family: 'Audimat';
     font-size: 20px;
     color:white;
@@ -50,6 +53,79 @@ body {
     height: 60px;
     background-color: #0b0a11;
 }
+
+.username {
+    color:white;
+    font-family: 'Audimat';
+    font-weight: bold;
+    font-size: 2em;
+    position:relative;
+    display: block;
+}
+
+.member {
+    color:white;
+    background: rgba(0,0,0,0.3);
+    padding: 30px;
+}
+
+.avatar {
+    border-radius: 50%;
+    border: 5px solid white;
+    width: 200px;
+    float: left;
+    margin-top: 3px;
+    margin-right: 15px;
+}
+
+.inventory {
+    background: rgba(0,0,0,0.5);
+    width:80%;
+    height: 200px;
+}
+
+.inventory td {
+    width: 33%; 
+    padding-bottom: 33%; 
+    height: 0;
+    border: 2px solid white;
+}
+
+.tooltip{
+    display: inline;
+    position: relative;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px; 
+ 
+    position: absolute;
+    z-index: 1;
+    
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
 
 #planets {
     float:left;
