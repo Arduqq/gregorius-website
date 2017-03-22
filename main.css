@@ -54,6 +54,11 @@ a {
     background-color: #0b0a11;
 }
 
+.backbutton {
+    font-size: 1.5em;
+    font-family: 'Audimat';
+}
+
 .username {
     color:white;
     font-family: 'Audimat';
@@ -79,6 +84,7 @@ a {
 }
 
 .inventory {
+    table-layout: fixed;
     background: rgba(0,0,0,0.5);
     width:80%;
     height: 200px;
@@ -103,13 +109,13 @@ a {
 }
 
 .tooltip .tooltiptext {
+    font-family: 'Audimat';
     visibility: hidden;
     width: 120px;
     background-color: black;
     color: #fff;
     text-align: center;
     padding: 5px 0;
-    border-radius: 6px;
     bottom: 100%;
     left: 50%;
     margin-left: -60px; 
@@ -126,6 +132,26 @@ a {
     opacity: 1;
 }
 
+.amount {
+    position: absolute;
+    background-color: black;
+    font-family: 'Audimat';
+    bottom: 5%;
+    left:75%;
+    color: #fff;
+    font-size: 0.7em;
+    
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;      
+}
+
+.amount:hover {
+    cursor:default;
+}
 
 #planets {
     float:left;
@@ -158,5 +184,16 @@ a {
 
 #github:hover {
     background: url(img/github.gif);
+    
+}
+
+#stuff {
+    height:320px;
+    width:320px;
+    background: url(img/stuff.png);
+}
+
+#stuff:hover {
+    background: url(img/stuff.gif);
     
 }
